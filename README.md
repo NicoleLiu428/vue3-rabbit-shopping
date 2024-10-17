@@ -33,3 +33,22 @@ npm run build
 ```sh
 npm run lint
 ```
+### src目录
+
++ apis -> API接口文件夹
++ components -> 通用组件
++ composables -> 组合函数文件夹
++ directives -> 全局指令文件夹
++ styles -> 全局样式文件夹
++ utils -> 工具函数文件夹
+## 技术栈
++ Vue3全家桶：create-vue、Pinia、ElementPlus、Vue3+Setup、Vue-Router、VueUse
+## 项目亮点
++ 基于业务逻辑的组件拆分思想
++ 长页面吸顶交互实现
++ SKU电商组件封装
++ 图片懒加载指令封装
++ 通用逻辑函数封装
++ 面板插槽组件等业务通用组件封装
++ 路由缓存问题处理
++ 支付宝第三方支付
