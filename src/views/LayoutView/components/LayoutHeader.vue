@@ -25,6 +25,7 @@ import HeaderCart from "./HeaderCart.vue"
         display: flex;
         justify-content: space-between;
         align-items:center;
+        height: 132px;
         .logo {
         width: 200px;
         a {

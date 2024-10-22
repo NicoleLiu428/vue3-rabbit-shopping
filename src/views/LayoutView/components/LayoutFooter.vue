@@ -14,15 +14,16 @@
       <dl>
         <dt>下載APP</dt>
         <dd><img src="@/assets/images/qrcode.jpg" alt="小兔鮮"></dd>
-        <dd>
-          掃描QRcode,下載APP
-          <a href="#">立即下載</a>
+        <dd class="load">
+          掃描QRcode,下載APP <br>
+          <div class="mb-4">
+            <el-button type="primary">立即下載</el-button>
+          </div>
         </dd>
       </dl>
       <dl>
         <dt>服務熱線</dt>
-        <dd><span>400-0000-000</span></dd>
-        <dd>周一~周日 8:00~18:00</dd>
+        <dd><i>400-0000-000</i><br>周一~周日 8:00~18:00</dd>
       </dl>
     </div>
   </footer>
@@ -47,14 +48,29 @@
       border-right: 1px solid #f2f2f2;
       color: #999;
       &:first-child {
-                padding-left: 0;
-            }
-
-            &:last-child {
-                border-right: none;
-                padding-right: 0;
-            }
+        padding-left: 0;
+      }
+      &:nth-child(3) {
+        .load {
+          border: none;
+          div {
+            padding-top: 10px;
+          }
+        }
+      }
+      &:last-child {
+          border-right: none;
+          padding-right: 0;
+          dd {
+            width: 180px;
+              border: none;
+              i {
+                font-size: 20px;
+              }
+          }
+      }
       dt {
+      
         line-height: 1;
         font-size: 18px;
       }
