@@ -1,5 +1,6 @@
 <template>
-    <div class="container" :class="{show:y>78}" >
+  <div class="app-header-sticky" :class="{show:y>78}">
+    <div class="container">
       <h1 class="logo">
         <router-link to="/">小兔鮮</router-link>
       </h1>
@@ -12,7 +13,8 @@
         <li><router-link to="/">專題</router-link></li>
       </ul>
     </div>
-    {{ y }}
+  </div>
+    
   </template>
   
   <script setup>
@@ -26,25 +28,33 @@
   </script>
   
   <style lang="scss" scoped>
-    .container {
-      display: flex;
+    .app-header-sticky {
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
       height: 80px;
-      justify-content: center;
       transform: none;
+      z-index: 999;
       opacity: 0;
+      background-color: #fff;
       &.show {
         transform: translateY(0);
-        transition: all 1 linear;
+        transition: all 0.2s linear;
         opacity: 1;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
       }
       .logo {
       width: 200px;
       a {
           display: block;
-          height: 132px;
+          height: 70px;
           width: 100%;
           text-indent: -9999px;
-          background: url('@/assets/images/logo.png') no-repeat center 18px/contain;
+          background: url('@/assets/images/logo.png') no-repeat center 0px/contain;
       }
       }
       .app-header-nav {
